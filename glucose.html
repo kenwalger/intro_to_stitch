@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blood Glucose</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+        <script src="https://s3.amazonaws.com/stitch-sdks/js/library/stable/stitch.min.js"></script>
+        <script src="js/glucose.js"></script>
+    </head>
+    <body onLoad="displayCommentsOnLoad()">
+        <h2>Sample Blood Glucose Report</h2>
+        <div id="content" class="grid-container">
+            <p>Patient Id: 12345</p>
+            <p>Date: 5 November 2017</p>
+            <p>Time: 08:23am</p>
+            <p>Result: 110</p>
+            <hr>
+            <div id="comments">
+            </div>
+            <hr>
+            <form>
+                <label for="new_comment">Add Comments: </label>
+                <input id="new_comment">
+                <input class="button" type="submit" onClick="addComment()">
+            </form>
+        </div>
+    </body>
+</html>
